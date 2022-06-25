@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="title">
+                <h1>Passwords Creator</h1>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 11H5C3.89543 11 3 11.8954 3 13V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V13C21 11.8954 20.1046 11 19 11Z" fill="#1C90F4" stroke="#1C90F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="#1C90F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                                                
+            </div>
+
+            <div class="setting generated">
+                <button class="copy">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6001 11.8999H13.3001C12.5269 11.8999 11.9001 12.5267 11.9001 13.2999V19.5999C11.9001 20.3731 12.5269 20.9999 13.3001 20.9999H19.6001C20.3733 20.9999 21.0001 20.3731 21.0001 19.5999V13.2999C21.0001 12.5267 20.3733 11.8999 19.6001 11.8999Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.1 16.1H8.4C8.0287 16.1 7.6726 15.9525 7.41005 15.6899C7.1475 15.4274 7 15.0713 7 14.7V8.4C7 8.0287 7.1475 7.6726 7.41005 7.41005C7.6726 7.1475 8.0287 7 8.4 7H14.7C15.0713 7 15.4274 7.1475 15.6899 7.41005C15.9525 7.6726 16.1 8.0287 16.1 8.4V9.1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                                                        
+                </button>
+                <input type="text" class="generated-password" placeholder="4utoP@ssword" readonly>
+                <button class="hash">
+                    
+                </button>
+            </div>
+        
+            <div class="wrapper">
+                <div class="setting">
+                    <div class="setting">
+                        <span>Lenght</span>
+                        <div class="lenght-div">
+                            <input type="number" class="input-lenght" readonly>
+                            <div class="lenght-increment-button">
+                                <button>
+                                    <img style="width: 1rem;" src="img/arrow-up.svg">
+                                </button>
+                                <button>
+                                    <img style="width: 1rem;" src="img/arrow-down.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <span>Complexity</span>
+                        <div class="complexity-bar">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="setting checkbox">
+                        <label for="lowerCase" class="label-chekbox"> LowerCase
+                            <input type="checkbox" hidden checked class="lowerCase" id="lowerCase" > 
+                            <div class="toggle">
+                                <div></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="setting checkbox">
+                        <label for="upperCase" class="label-chekbox"> UpperCase
+                            <input type="checkbox" hidden checked class="upperCase" id="upperCase" > 
+                            <div class="toggle">
+                                <div></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="setting checkbox">
+                        <label for="number" class="label-chekbox"> Number
+                            <input type="checkbox" hidden checked class="number" id="number" > 
+                            <div class="toggle">
+                                <div></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="setting checkbox">
+                        <label for="special" class="label-chekbox"> Special
+                            <input type="checkbox" hidden checked class="special" id="special" > 
+                            <div class="toggle">
+                                <div></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div>
+                <button class="btn">Generate</button>
+            </div>
+      
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
